@@ -1,5 +1,5 @@
 Primero creamos el repositorio git; después creamos el proyecto de eclipse en la misma ruta
-que habiamos creado el repositorio git
+que habíamos creado el repositorio git.
 
 Descargamos el archivo .zip y los descomprimimos en la carpeta src del proyecto.
 
@@ -39,4 +39,25 @@ He realizado un push con la refactorización 4.
 He creado un método del get del colorGroup y le he llamado colorGroup
 
 He realizado un push con la refactorización 5.
+
+He cambiado el tipo del parámetro que devuelve el método getPropertyNumberForColor de String a int
+
+He añadido un parámetro booleano que por defecto es true llamado visibility al método getPropertyNumberForColor.
+
+He cambiado el tipo de dato que retorna el método playAction de void (no retorna ningún valor) a boolean.
+Cambiar el tipo del resultado de void a boolean
+Añadir un nuevo parámetro del de tipo String que se llama msg y por defecto es nulo.
+
+Al hacer las refacorizaciones del ejercicio 6 de esta práctica se producen errores en otras partes del
+código relacionadas con la parte cambiada y que tendremos que ir solventando una a una.
+
+La respuesta a la pregunta final se debe a que hemos cambiado un método en la superclase Cell por lo que
+todas las subclases de la clase Cell que invoquen el método playAction tendrán un error debido al cambio
+realizado que tendremos que solventar.
+
+Este error se debe a que hemos cambiado el método de void (que no retorna ningúna valor), a boolean que
+nos retornará un valor de tipo booleano por lo que tendremos que añadir un return false o un return true
+en todas las llamadas que hagan a este método las subclases de la superclase Cell.
+
+
 
