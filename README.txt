@@ -26,9 +26,17 @@ He extraído la interfaz de la clase Cell y la he llamado IOwnable y he seleccio
 los métodos getAvailable setAvailable getProprietary setProprietary debido a que son los que
 afectan a la compra y venta de las parcelas de monopoly.
 
-He realizado un push con el tercer paso de la refactorización.
+** NOTA: En el push de "Refactorización Cuatro" vienen los pasos de la refactorización 3 y 4 debido a que se me olvido hacer
+un push al terminar la refactorización 3.
 
 Hemos seleccionado un fragmento de código y hemos creado un nuevo método llamado calcMonopoliesRent con esta pieza de código.
 Al provar las dos opciones podemos deducir que el Eclipse reconoce si el cacho de código necesita
 que le pasen alguna variable desde fuera del método o no. Yo he elegido extraer el método con
 las variables ya inicializadas para que no haga falta pasarle ninguna variable desde fuera del módulo.
+
+He realizado un push con la refactorización 4.
+
+He creado un método del get del colorGroup y le he llamado colorGroup
+
+He realizado un push con la refactorización 5.
+
