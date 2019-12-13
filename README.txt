@@ -17,5 +17,18 @@ He realizado un Push Down en la clase Cell al atributo available haciendo que lo
 subclases; esto ha generado un par de errores en métodos que estaban fuera de esta clase.
 
 Para solventar estos errores en vez de realizar un Undo, he realizado un Pull Up del atributo 
-available de una de las subclases (en mi caso lo he hecho de la subclase GoCell).
+available de una de las subclases (en mi caso lo he hecho de la subclase GoCell) para subir este atributoç
+a la superclase.
 
+Realizo el tercer push con la segunda práctica de refactorización.
+
+He extraído la interfaz de la clase Cell y la he llamado IOwnable y he seleccionado que cambien
+los métodos getAvailable setAvailable getProprietary setProprietary debido a que son los que
+afectan a la compra y venta de las parcelas de monopoly.
+
+He realizado un push con el tercer paso de la refactorización.
+
+Hemos seleccionado un fragmento de código y hemos creado un nuevo método llamado calcMonopoliesRent con esta pieza de código.
+Al provar las dos opciones podemos deducir que el Eclipse reconoce si el cacho de código necesita
+que le pasen alguna variable desde fuera del método o no. Yo he elegido extraer el método con
+las variables ya inicializadas para que no haga falta pasarle ninguna variable desde fuera del módulo.
